@@ -4,6 +4,11 @@ Documentation for open source GameCI projects. You can find the `.md` files insi
 [docs](./docs) folder. The live version is available on [game.ci](https://game.ci). This website is
 built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/cloudymax/documentation/main/static/assets/images/FeedbackLoop.drawio.svg">
+</p>
+
+
 ### Installation
 
 ```bash
