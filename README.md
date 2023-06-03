@@ -7,7 +7,7 @@ built using [Docusaurus 2](https://docusaurus.io/), a modern static website gene
 ### Installation
 
 ```bash
-yarn
+yarn install --ignore-engines
 ```
 
 ### Local Development
