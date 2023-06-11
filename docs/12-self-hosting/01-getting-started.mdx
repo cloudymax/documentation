@@ -1,0 +1,70 @@
+---
+toc_max_heading_level: 4
+---
+
+# Getting Started
+
+There are many ways to self-host CI/CD runners Which way is most suitable for your needs will be
+determined by the requirements of your project and the resources availble to you.
+
+![IMG](/assets/images/self-hosting-header0.png)
+
+## Requirements
+
+This guide is tested for compatibility on devics which meet the following requirements:
+
+- x86 or amd64 processor
+- Ubuntu 22.04 LTS Server or Debian 12 Bookworm
+- root access
+- Network connectivity
+- Nvidia GPU (optional)
+
+## Step 1: Creating a Host
+
+The Host is the computer which will execute the runner program. This can be a desktop computer,
+laptop, Virtual Machine, or VPS from a cloud provider. Choose the process that works best for your
+situation. You are done when you are able to log-in to the host as a user with root access.
+
+- For users with dedicated hardware available, perform a clean installation of the operating system
+  of your choice using the following guides:
+
+  - [Install Ubuntu 22.04 LTS on a local machine](https://ostechnix.com/install-ubuntu-server/)
+
+  - [Install Debian on a local system](https://www.linuxtechi.com/how-to-install-debian-11-bullseye/)
+
+- For users without dedicated hardware, a virtual host is the best solution. While there are many
+  ways to create avirtual machine I advise using Multipass because it is specifically designed to
+  create conformant Ubuntu Server VMs on almost any platform.
+
+  - [Install Multipass](https://multipass.run/install)
+
+  - [Create a Virtual Machine](https://multipass.run/docs/create-an-instance)
+
+- For cloud-based deployments, refer to the following guides for deploying runners as spot instances
+  using Terraform and Cloud-Init:
+
+  - [AWS guide](https://github.com/buildstar-online/modules-aws-ec2)
+
+  - [GCP guide](https://github.com/buildstar-online/gcp-tf-starter)
+
+  - [Azure guide](https://github.com/buildstar-online/azure-tf-starter)
+
+  - [Equinix Metal](https://github.com/buildstar-online/modules-equinix-tf-spot)
+
+## Step 2: Provisioning the Host
+
+Once you can sign into your host, follow the appropriate guide to complete the provisioning process.
+
+- [Ubuntu 22.04 Setup](./ubuntu-setup)
+
+- [Debian 12 Setup](./debian-setup)
+
+## Step 2: Install the Runner Software
+
+- github
+
+- gitlab
+
+- circleci
+
+## Step 3: Update Workflows
