@@ -1,4 +1,4 @@
-# Kubernetes
+# Kubernetes (Cloud Runner)
 
 The guide below describes the process for setting up a minimum-viable Kubernetes environment on
 which to deploy GameCI CloudRunner without the need for any paid services. For this exercise we will
@@ -46,7 +46,14 @@ Single-Node cluster. This example shows a minimum-viable deployment.
   export PATH=$PATH:$HOME/minio-binaries/
   ```
 
-- install k9s (optional)
+- Install k9s (optional)
+
+  K9s is a terminal based UI to interact with your Kubernetes clusters. The aim of this project is
+  to make it easier to navigate, observe and manage your deployed applications in the wild. K9s
+  continually watches Kubernetes for changes and offers subsequent commands to interact with your
+  observed resources.
+
+  - https://k9scli.io/
 
   ```bash
   wget https://github.com/derailed/k9s/releases/download/v0.27.4/k9s_Linux_amd64.tar.gz
